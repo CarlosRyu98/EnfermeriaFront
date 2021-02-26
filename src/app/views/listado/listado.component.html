@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="h">
+  <h1>Listado de alumnos</h1>
+</div>
+  <div class="table-responsible">
+    <table class="table table-stripped table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Dni</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Nacimiento</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Dirección</th>
+          <th scope="col">Tutor</th>
+          <th scope="col">Responsable</th>
+          <th scope="col">Borrar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let a of alumnos">
+          <th scope="row" [routerLink]="['/shared/classes/alumno', a.id]"></th>
+          <td>{{ a.id }}</td>
+          <td>{{ a.dni }}</td>
+          <td>{{ a.nombre }}</td>
+          <td>{{ a.fechaNacimiento }}</td>
+          <td>{{ a.telefono }}</td>
+          <td>{{ a.direccion }}</td>
+          <td>{{ a.tutor }}</td>
+          <td>{{ a.responsable }}</td>
+          <td>
+            <button class="delete" title="delete a" (click)="delete(a)">
+              x
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

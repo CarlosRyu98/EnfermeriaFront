@@ -1,0 +1,106 @@
+<p style="background: yellow" >Partes de esta página carecen de funcionalidad</p>
+
+<form (ngSubmit)="add()" #alumnoForm="ngForm" class="container">
+  <div class="form-group">
+    <label for="id">Id: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="id"
+      placeholder="Introduzca Id"
+      [(ngModel)]="alumno.id"
+      #name="ngModel"
+    />
+    <label for="id">Dni: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="dni"
+      placeholder="Introduzca Dni"
+      [(ngModel)]="alumno.dni"
+      #name="ngModel"
+    />
+    <label for="id">Nombre: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="nombre"
+      placeholder="Introduzca Nombre"
+      [(ngModel)]="alumno.nombre"
+      #name="ngModel"
+    />
+    <label for="id">Fecha de Nacimiento: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="fechaNacimiento"
+      placeholder="Introduzca Fecha de Nacimiento"
+      [(ngModel)]="alumno.fechaNacimiento"
+      #name="ngModel"
+    />
+    <label for="id">Telefono: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="telefono"
+      placeholder="Introduzca Telefono"
+      [(ngModel)]="alumno.telefono"
+      #name="ngModel"
+    />
+    <label for="id">Dirección: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="direccion"
+      placeholder="Introduzca Dirección"
+      [(ngModel)]="alumno.direccion"
+      #name="ngModel"
+    />
+    <label for="id">Tutor: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="tutor"
+      placeholder="Introduzca Responsable"
+      [(ngModel)]="alumno.tutor"
+      #name="ngModel"
+    />
+    <label for="id">Responsable: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="responsable"
+      placeholder="Introduzca Responsable"
+      [(ngModel)]="alumno.responsable"
+      #name="ngModel"
+    />
+    <br />
+    <button type="submit" class="btn btn-default">Guardar</button>
+  </div>
+  <div class="form-group">
+    <label for="desc">Descripción: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="descripcion"
+      placeholder="Introduzca descripción"
+    />
+  </div>
+  <div class="form-group">
+    <label for="desc">Fecha de inicio: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="fechaini"
+      placeholder="Introduzca fecha inicial"
+    />
+    <label for="desc">Fecha de final: </label>
+    <input
+      type="text"
+      class="form-control"
+      name="fechafin"
+      placeholder="Introduzca fecha final"
+    />
+  </div>
+
+</form>
