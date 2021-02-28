@@ -19,6 +19,20 @@ export class ListadoService {
     console.log('ListadoService inicializado...');
    }
 
+   public alumno: Alumno = new Alumno();
+
+   sendAlumno(alumno: Alumno) {
+    this.alumno = alumno;
+  }
+
+  getAlumno() {
+    return this.alumno;
+  }
+
+  resetAlumno() {
+    this.alumno = new Alumno;
+  }
+
    getAlumnos() {
     const url = `${this.url}/alumnos`
      return this.http.get<Observable<Alumno[]>>(url)

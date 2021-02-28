@@ -35,6 +35,11 @@ export class AnadirAlumnoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.alumno = this.listadoService.getAlumno();
+  }
+
+  ngOnDestroy(): void {
+    this.listadoService.resetAlumno();
   }
 
 }

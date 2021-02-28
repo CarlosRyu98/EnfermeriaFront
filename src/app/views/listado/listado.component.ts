@@ -26,6 +26,10 @@ export class ListadoComponent implements OnInit {
      this.listadoService.deleteAlumno(alumno.id).subscribe();
     }
 
+    update(alumno: Alumno): void {
+      this.listadoService.sendAlumno(alumno);
+    }
+
   ngOnInit() {
   }
 
